@@ -955,3 +955,47 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+/*--------------------------------------------------------------
+sidebar
+--------------------------------------------------------------*/
+
+#secondary .widget-title{
+	background-color: cornflowerblue;
+	border-bottom: 2px solid cornflowerblue;
+	margin: 10px;
+	padding: 10px;
+	font-size: 16px;
+}
+
+#secondary ul{
+	list-style-type: none;
+
+}
+
+#categories-2 ul, #recent-posts-2 ul, #recent-comments-2 ul, #archives-2 ul{
+	width: 200px;
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+
+}
+
+#categories-2 li{
+	background-color: #2B6FB6;
+	border: 1px solid black;
+	margin-bottom: 1px;
+	color: white;
+}
+
+#categories-2 li a, #recent-posts-2 li a, #recent-comments-2 li a, #archives-2 li a {
+	display: block;
+	line-height: 1em;
+	text-align: center;
+	text-decoration: none;
+	padding: 4px;
+	color: black;
+
+}
+
