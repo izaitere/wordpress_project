@@ -48,7 +48,9 @@ get_header(); ?>
 
 		endif; ?>
 
-		</main><!-- #main -->
+
+
+        </main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
