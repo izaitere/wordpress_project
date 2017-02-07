@@ -266,9 +266,35 @@ body{
 }
 
 /*--------------------------------------------------------------
-body
+nav
 --------------------------------------------------------------*/
-body{
+#site-navigation{
+	height: 40px;
+
+}
+
+#site-navigation ul{
+	height: 40px;
+	font-size: 14px;
+	color: red;
+
+
+
+}
+#site-navigation ul li{
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	width: 100px;
+	height: 40px;
+	border-right-style: solid;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+
+
+}
+#site-navigation ul li a{
+	display: block;
+	height: 40px;
 
 }
 
