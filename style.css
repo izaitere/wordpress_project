@@ -71,6 +71,7 @@ summary {
 	display: block;
 }
 
+
 audio,
 canvas,
 progress,
@@ -262,6 +263,8 @@ th {
 body
 --------------------------------------------------------------*/
 body{
+	margin: 0;
+
 
 }
 
@@ -285,7 +288,7 @@ nav
 	text-align: center;
 	padding: 5px;
 	margin: 5px;
-	width: 100px;
+	width: 120px;
 	height: 40px;
 	border-right-style: solid;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -310,6 +313,95 @@ page
 	border: 3px solid grey;
 	/*background-image: url(screenshot.png);
 	background-repeat: no-repeat;*/
+}
+
+/*--------------------------------------------------------------
+article
+--------------------------------------------------------------*/
+article {
+	/*width: 50%;*/
+	min-height: 200px;
+	border: 1px solid grey;
+	padding: 10px;
+	margin: 2%;
+
+}
+
+.entry-meta{
+	text-decoration: none;
+	color: grey;
+	font-size: xx-small;
+
+
+}
+
+.entry-meta a{
+	text-decoration: none;
+	color: grey;
+
+
+}
+
+.entry-content{
+	width: 350px;
+	margin: 10px;
+}
+
+.entry-content a{
+	text-decoration: none;
+	color: #0D85CC;
+	font-size: smaller;
+
+}
+
+.entry-content p{
+	margin-bottom: 2px;
+
+}
+
+.entry-header{
+	width: 350px;
+	height: 220px;
+
+}
+
+h2.entry-title {
+	font-size: 16px;
+	margin: 3px;
+	padding: 3px;
+}
+
+h2.entry-title a{
+	text-decoration: none;
+	color: #21759b;
+
+
+
+}
+
+.entry-footer{
+	text-decoration: none;
+	color: grey;
+	font-size: smaller;
+}
+
+.entry-footer a{
+	text-decoration: none;
+	color: #0D85CC;
+	font-size: smaller;
+
+}
+
+.cat-links{
+	margin-right: 2px;
+}
+
+.comments-link{
+	margin-right: 2px;
+}
+
+.edit-link{
+	margin-right: 2px;
 }
 
 
@@ -1047,12 +1139,20 @@ object {
 sidebar
 --------------------------------------------------------------*/
 
+#secondary{
+	border-left: 2px solid black;
+
+
+
+}
+
 #secondary .widget-title{
 	display: inline-block;
-	background-color: red;
 	margin: 10px;
 	padding: 10px;
-	font-size: 16px;
+	font-size: 20px;
+	font-weight: bold;
+	color: grey;
 }
 
 #secondary ul{
@@ -1069,8 +1169,8 @@ sidebar
 }
 
 #categories-2 li{
-	background-color: gainsboro;
-	border: 1px solid black;
+	border-bottom: 1px solid gainsboro;
+	font-size: 14px;
 	margin-bottom: 1px;
 	color: white;
 }
@@ -1078,10 +1178,30 @@ sidebar
 #categories-2 li a, #recent-posts-2 li a, #recent-comments-2 li a, #archives-2 li a {
 	display: block;
 	line-height: 1em;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
 	padding: 4px;
 	color: black;
 
 }
+
+
+#recent-posts-2 a{
+	font-size: 14px;
+	color: grey;
+}
+
+#recent-comments-2 a{
+	font-size: 14px;
+	color: grey;
+}
+
+#archives-dropdown-2{
+	border-radius: 3px;
+	padding: 5px;
+	font-size: 12px;
+	color: grey;
+}
+
+
 
