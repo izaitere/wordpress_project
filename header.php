@@ -21,6 +21,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+    <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'thene_personnalise' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">

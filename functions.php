@@ -45,6 +45,7 @@ function thene_personnalise_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'thene_personnalise' ),
+        'menu-2' => esc_html__( 'PITI-MENU', 'thene_personnalise' ),
 	) );
 
 	/*
@@ -141,3 +142,37 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+//fonction pour extrait
+
+// Adding excerpt option box for pages as well
+add_post_type_support( 'page', 'excerpt' );
+
+function new_excerpt_length($length) {
+    return 10;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+
+function wp_trim_all_excerpt($text) { // Creates an excerpt if needed; and shortens the manual excerpt as well
+    global $post;
+    if ( '' == $text ) {
+        $text = get_the_content('');
+        $text = apply_filters('the_content', $text);
+        $text = str_replace(']]>', ']]>', $text);
+    }
+    $text = strip_shortcodes( $text ); // optional
+    $text = strip_tags($text);
+    $excerpt_length = apply_filters('excerpt_length', 55);
+    $excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
+    $words = explode(' ', $text, $excerpt_length + 1);
+    if (count($words)> $excerpt_length) {
+        array_pop($words);
+        $text = implode(' ', $words);
+        $text = $text . $excerpt_more;
+    } else {
+        $text = implode(' ', $words);
+    }
+    return $text;
+}
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+add_filter('get_the_excerpt', 'wp_trim_all_excerpt');

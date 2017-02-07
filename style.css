@@ -258,6 +258,58 @@ th {
 }
 
 
+/*--------------------------------------------------------------
+body
+--------------------------------------------------------------*/
+body{
+
+}
+
+/*--------------------------------------------------------------
+body
+--------------------------------------------------------------*/
+body{
+
+}
+
+
+
+
+/*--------------------------------------------------------------
+page
+--------------------------------------------------------------*/
+#page {
+	width: 1200px;
+	margin: 0 auto;
+	border: 3px solid grey;
+	/*background-image: url(screenshot.png);
+	background-repeat: no-repeat;*/
+}
+
+
+
+
+/*--------------------------------------------------------------
+header
+--------------------------------------------------------------*/
+
+#masthead {
+	height: 213px;
+	margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------
+content
+--------------------------------------------------------------*/
+
+#content {
+	width: 1140px;
+}
+
+
+
+
 /*SYSTEME DE GRILLES********************************************************************************************/
 
 /**on divise la largeur de l'écran en 12 colonnes. Chaque colonne occupe un douzième de la page**************/
@@ -957,13 +1009,21 @@ object {
 }
 
 
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
 sidebar
 --------------------------------------------------------------*/
 
 #secondary .widget-title{
-	background-color: cornflowerblue;
-	border-bottom: 2px solid cornflowerblue;
+	display: inline-block;
+	background-color: red;
 	margin: 10px;
 	padding: 10px;
 	font-size: 16px;
@@ -975,7 +1035,7 @@ sidebar
 }
 
 #categories-2 ul, #recent-posts-2 ul, #recent-comments-2 ul, #archives-2 ul{
-	width: 200px;
+	width: 250px;
 	list-style: none;
 	padding: 0;
 	margin: 10px;
@@ -983,7 +1043,7 @@ sidebar
 }
 
 #categories-2 li{
-	background-color: #2B6FB6;
+	background-color: gainsboro;
 	border: 1px solid black;
 	margin-bottom: 1px;
 	color: white;
