@@ -20,7 +20,7 @@
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'thene_personnalise' ), 'thene_personnalise', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
 
 		</div><!-- .site-info -->
-        <?php wp_nav_menu( array( 'theme_location' => 'menu-2') ); ?>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

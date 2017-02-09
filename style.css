@@ -54,6 +54,7 @@ html {
 
 body {
 	margin: 0;
+
 }
 
 article,
@@ -266,13 +267,17 @@ body{
 	margin: 0;
 
 
+
 }
 
 /*--------------------------------------------------------------
 nav
 --------------------------------------------------------------*/
+
 #site-navigation{
 	height: 40px;
+	/*position: relative;*/
+	/*top: 70px;*/
 
 }
 
@@ -308,25 +313,54 @@ nav
 page
 --------------------------------------------------------------*/
 #page {
-	width: 1200px;
-	margin: 0 auto;
-	border: 3px solid grey;
+	width: 80%;
+	margin: 30px auto;
+	border: 2px solid grey;
 	/*background-image: url(screenshot.png);
 	background-repeat: no-repeat;*/
 }
+/*--------------------------------------------------------------
+logo
+--------------------------------------------------------------*/
+.site-title{
+	font-size: 30px;
+	text-transform: uppercase;
+	/*position: relative;*/
+	margin: 3px;
+	padding: 3px;
+
+}
+
+.site-title a{
+
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	border-bottom: 3px solid red;
+
+}
+p.site-description{
+	font-weight: bold;
+	font-size: 13px;
+	letter-spacing: 4px;
+	margin-left: 10px;
+	/*position: absolute;*/
+	/*top: 330px;*/
+	/*left: 200px;*/
+
+
+}
+
+
 
 /*--------------------------------------------------------------
 article
 --------------------------------------------------------------*/
-article {
-	/*width: 50%;*/
-	min-height: 200px;
-	border: 1px solid grey;
-	padding: 10px;
-	margin: 2%;
 
+article:nth-of-type(odd){
+
+	border-right: 1px solid gainsboro;
 }
-
 .entry-meta{
 	text-decoration: none;
 	color: grey;
@@ -342,10 +376,10 @@ article {
 
 }
 
-.entry-content{
-	width: 350px;
-	margin: 10px;
-}
+/*.entry-content{*/
+	/*width: 350px;*/
+	/*margin: 10px;*/
+/*}*/
 
 .entry-content a{
 	text-decoration: none;
@@ -356,12 +390,12 @@ article {
 
 .entry-content p{
 	margin-bottom: 2px;
+	font-size: 14px;
 
 }
 
 .entry-header{
-	width: 350px;
-	height: 220px;
+	width: 300px;
 
 }
 
@@ -412,7 +446,7 @@ header
 --------------------------------------------------------------*/
 
 #masthead {
-	height: 213px;
+	height: 220px;
 	margin: 0 auto;
 }
 
@@ -420,10 +454,6 @@ header
 /*--------------------------------------------------------------
 content
 --------------------------------------------------------------*/
-
-#content {
-	width: 1140px;
-}
 
 
 
@@ -499,8 +529,8 @@ select,
 textarea {
 	color: #404040;
 	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 12px;
+	font-size: 0.8rem;
 	line-height: 1.5;
 }
 
@@ -698,6 +728,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
+	font-size: 12px;
 	color: #666;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -738,17 +769,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: midnightblue;
 }
 
 a:visited {
-	color: purple;
+	color: black;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: grey;
 }
 
 a:focus {
@@ -1126,13 +1157,61 @@ object {
 	display: block;
 }
 
+/*--------------------------------------------------------------
+page single
+--------------------------------------------------------------*/
+#commentform{
+	width: 300px;
+}
+#reply-title {
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+h1.entry-title{
+	font-size: 18px;
+	margin: 5px;
+	padding: 5px;
+}
+
+article p{
+	font-size: 12px;
+
+}
 
 
+/*#primary{*/
+	/*width: 800px;*/
+	/*height: 800px;*/
+/*}*/
+
+/*#content{*/
+	/*width: 800px;*/
+	/*height: 800px;*/
+/*}*/
+
+.navigation{
+	width: 400px;
+	position: absolute;
+	top: 450px;
+	left: 850px;
+}
+
+#comments{
+	width:1000px;
+	height: 100px;
+}
 
 
+p.logged-in-as, .reply, .comment-form-comment, .form-submit, .comment-meta{
+	font-size: 12px;
+	margin-left: 10px;
 
-
-
+}
+.comments-area{
+	font-size: 12px;
+	margin-left: 10px;
+}
 
 
 /*--------------------------------------------------------------
@@ -1140,19 +1219,21 @@ sidebar
 --------------------------------------------------------------*/
 
 #secondary{
-	border-left: 2px solid black;
+	border-left: 1px solid grey;
+	width: 400px;
 
 
 
 }
 
 #secondary .widget-title{
+
 	display: inline-block;
 	margin: 10px;
 	padding: 10px;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: bold;
-	color: grey;
+	color: black;
 }
 
 #secondary ul{
@@ -1196,6 +1277,12 @@ sidebar
 	color: grey;
 }
 
+li#recent-posts-2{
+	font-size: 16px;
+	font-weight: bold;
+	color: grey;
+}
+
 #archives-dropdown-2{
 	border-radius: 3px;
 	padding: 5px;
@@ -1203,5 +1290,42 @@ sidebar
 	color: grey;
 }
 
+li.widget-title{
+	font-size: 16px;
+	font-weight: bold;
+	color: grey;
+}
+
+#tag_cloud a[title] {
+	font-size: 12px;
 
 
+}
+.tagcloud a:active{
+	font-size: 14px;
+
+}
+.tagcloud a{
+	text-decoration: none;
+	font-size: 12px;
+
+}
+
+h1.page-title{
+	font-size: 22px;
+	color: red;
+	margin-left: 15px;
+	text-decoration: underline;
+}
+
+
+
+/*--------------------------------------------------------------
+page
+--------------------------------------------------------------*/
+
+.page{
+
+	border: 1px solid black;
+
+}

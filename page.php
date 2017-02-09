@@ -14,11 +14,12 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area row col-8">
+		<main id="main" class="site-main row" role="main">
 
 			<?php
 			while ( have_posts() ) : the_post();
+
 
 				get_template_part( 'template-parts/content', 'page' );
 
