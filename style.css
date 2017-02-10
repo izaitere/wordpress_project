@@ -314,7 +314,7 @@ page
 --------------------------------------------------------------*/
 #page {
 	width: 80%;
-	margin: 30px auto;
+	margin: 20px auto;
 	border: 2px solid grey;
 	/*background-image: url(screenshot.png);
 	background-repeat: no-repeat;*/
@@ -359,7 +359,6 @@ article
 
 article:nth-of-type(odd){
 
-	border-right: 1px solid gainsboro;
 }
 .entry-meta{
 	text-decoration: none;
@@ -1197,10 +1196,7 @@ article p{
 	left: 850px;
 }
 
-#comments{
-	width:1000px;
-	height: 100px;
-}
+
 
 
 p.logged-in-as, .reply, .comment-form-comment, .form-submit, .comment-meta{
@@ -1220,7 +1216,7 @@ sidebar
 
 #secondary{
 	border-left: 1px solid grey;
-	width: 400px;
+	width: 300px;
 
 
 
@@ -1329,3 +1325,18 @@ page
 	border: 1px solid black;
 
 }
+.post-navigation,.nav-next{
+	position: absolute;
+	left: 450px;
+
+
+}
+
+.post-navigation a{
+	text-decoration: none;
+	color: red;
+
+
+
+}
+

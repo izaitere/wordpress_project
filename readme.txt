@@ -1,4 +1,26 @@
-=== thene_personnalise ===
+Thème Wordpress
+
+=== THENE_PERSONNALISE ===
+
+
+Ce thème a pour objectif de développer un site dédiée à l'information où toute personne pourrait partager ses astuces et idées
+Tous les secteurs peuvent être concernés :
+Cuisine : développer des recettes par catégorie : light/recettes gourmandes/Recettes spécial fêtes/Recettes rapides...
+News : Toute infos représentant une actualité, une infos à travers le pays ou le monde
+Tourisme : les personnes férues de voyage pourront répertorier les pays ou endroit par catégorie....
+
+Il y a des plugins préintallés considérés comme essentiels pour notament :
+
+Un plugin de statistiques pour avoir une veille sur son site avec en détails :
+-les commentaires
+-Le nombre d'utilisateurs
+-le nombre d'articles écrits
+-le nombre de commentaires
+
+Un plugin spécial membre actif :
+-Aprés inscription le membre est actif et fait partie d'une communauté, ses commentaires sont affichés dans une page dédiée, il peut ainsi proposer ses idées donner son avis
+
+
 
 Contributors: automattic
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
